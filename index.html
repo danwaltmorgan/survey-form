@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
   </head>
   <body>
     <header>
@@ -13,8 +14,9 @@
     <form id="survey-form" class="form-group">
       <div class="form-group" id="name-div">
         <label for="name" id="name-label">
-          Name:
+          Name
         </label>
+        <br>
         <input
           type="text"
           name="name"
@@ -26,8 +28,9 @@
       </div>
       <div class="form-group" id="email-div">
         <label for="email" id="email-label">
-          Email:
+          Email
         </label>
+        <br>
         <input
           type="email"
           name="email"
@@ -39,22 +42,24 @@
       </div>
       <div class="form-group" id="age-div">
         <label for="number" id="number-label">
-          Age:
+          Age
         </label>
+        <br>
         <input
           type="number"
           name="number"
           id="number"
           min="1"
-          max="130"
-          placeholder="Enter your age"
+          max="116"
+          placeholder="1-116"
           required
           >
           <br>
       </div>
       <div class="form-group" id="dropdown-div">
         <label for="dropdown" id="dropdown-label">
-          Please Choose your favorite from the following:</label>
+          Please Choose your favorite from the following</label>
+          <br>
           <select class="form-element" name="dropdown" id="dropdown">
             <option value="north-america">North America</option>
             <option value="south-america">South America</option>
@@ -69,16 +74,23 @@
       <div class="form-group" id="radio-div">
         <label for="urban-rural" id="radio-label">
           Would you prefer to live in an Urban or Rural Setting?</label>
+          <br>
+          <div class="input-element">
           <input type="radio" name="urban-rural" value="urban">Urban
+          <br>
           <input type="radio" name="urban-rural" value="rural">Rural
+          <br>
           <input type="radio" name="urban-rural" value="mix">A Mix
+          <br>
           <input type="radio" name="urban-rural" value="doesnt-matter">Doesn't Matter
           <br>
+        </div>
       </div>
       <div class="form-group" id="check-div">
         <label for="prefers" id="checkbox-label">
         What do you like to do when visiting other countries?</label>
         <br>
+        <div class="input-element">
         <input type="checkbox" name="prefers" value="eat">
         Eat and drink good food
         <br>
@@ -96,16 +108,19 @@
         <br>
         <input type="checkbox" name="prefers" value="flow">
         Just go with the flow man
+        </div>
         <br>
       </div>
-      <div class="form-group" id="text-area-div">
-        <label for="haiku" id="area-label">Please type a haiku:</label>
-        <textarea name="haiku" rows="8" cols="40">A common format is 5, 7, 5</textarea>
+      <div class="form-group" id="text-area-div" class="input-element">
+        <label for="haiku" id="area-label">Please type a haiku</label>
+        <br>
+        <textarea name="haiku" id="haiku-area">A common format is 5, 7, 5</textarea>
         <br>
       </div>
-      <div>
-        <label for="sumbit" id="sumbit-label">
-          Sumbit and we will get back to you about our recommendations on where you should travels next!</label>
+      <div class="form-group" id="button-div">
+        <label for="sumbit" id="sumbit-label" class="input-element">
+          Sumbit and we will get back to you with recommendations on where you should travel next!</label>
+          <br>
         <button type="submit" name="button" id="submit">Submit</button>
       </div>
     </form>
