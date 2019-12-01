@@ -2,12 +2,16 @@ html{
   background-color: #808080;
   color: white;
   font-family: Courier, monospace;
+  background-image: url(../images/worldatlas.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 body {
   text-align: center;
   background-color: #4d4d4d;
   border-radius: 5%;
+  opacity: 0.8;
   width: 90%;
   margin: auto;
   max-width: 800px;
@@ -16,6 +20,7 @@ body {
 header {
   position: relative;
   top: 20px;
+  border-bottom:
 }
 
 h1 {
@@ -24,6 +29,7 @@ h1 {
 
 label {
   font-size: 150%;
+  color: #66ffff;
 }
 
 .form-group {
@@ -35,6 +41,7 @@ label {
 
 #title {
   padding-top: 10px;
+  color: #66ffff;
 }
 
 #description {
@@ -44,15 +51,24 @@ label {
 }
 
 #area-label {
-  text-align: center;
+  text-align: left;
   display: block;
 }
 
 #haiku-area {
-  margin: 0 auto;
-  display: block;
+  /*margin: 0 auto;
+  display: block;*/
   width: 70%;
   height: 6em;
+}
+
+#submit-label {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 
 #submit {
@@ -60,4 +76,8 @@ label {
   display: block;
   width: 70%;
   height: 30px;
+  background-color: #66ffff;
+}
+#submit:hover {
+  background-color: #00b3b3;
 }
